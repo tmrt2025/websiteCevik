@@ -1,0 +1,27 @@
+{
+  "pageTitle": "REGISTRATION",
+  "description": "Congress student participation information",
+  "sections": [
+    {
+      "title": "",
+      "content": "Students who do not wish to present a poster or oral presentation, but still seek to engage in scientific sessions and expert talks, networking opportunities, and the social aspects of the congress, are encouraged to participate are encouraged to participate.",
+      "type": "info"
+    },
+    {
+      "title": "",
+      "type": "links",
+      "links": [
+        {
+          "text": "For the application form (Domestic Participants),",
+          "url": "/application-domestic",
+          "clk":"click here."
+        },
+        {
+          "text": "For the application form (International Participants),", 
+          "url": "/application-international",
+          "clk":"click here."
+        }
+      ]
+    }
+  ]
+}

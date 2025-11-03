@@ -1,0 +1,105 @@
+{
+  "pageTitle": "Scientific Program - May 24",
+  "date": "2025-05-24",
+  "location": "Istanbul, Turkey",
+  "schedule": [
+    {
+      "type": "section-header",
+      "title": "THE COMPASS OF MEDICINE: RESEARCH",
+      "moderator": "Prof. Dr. Pinar Soysal"
+    },
+    {
+      "type": "talk",
+      "start": "09.00",
+      "end": "09.45",
+      "title": "How Medicine Shapes Our Minds and Our Minds Shape Medicine: Unveiling the Power of Research",
+      "speaker": "Prof. Dr. Nicola Veronese"
+    },
+    {
+      "type": "talk",
+      "start": "09.45",
+      "end": "10.30",
+      "title": "Academic Leadership in the 21st Century: Redesigning Education and Innovative Modernization in Universities",
+      "speaker": "Prof. Dr. Luciano Saso"
+    },
+    {
+      "type": "break",
+      "start": "10.30",
+      "end": "10.45",
+      "title": "Coffee Break"
+    },
+    {
+      "type": "section-header",
+      "title": "JUST A DOCTOR? PASSION, VISION, INTEGRITY",
+      "moderator": "X"
+    },
+    {
+      "type": "talk",
+      "start": "10.45",
+      "end": "11.30",
+      "title": "Extraordinary Doctors, Extraordinary Technologies: When \"That Innovation\" Puts on a White Coat",
+      "speaker": "Dr. Yusuf Yesil"
+    },
+    {
+      "type": "talk",
+      "start": "11.30",
+      "end": "12.15",
+      "title": "How to Get Out of the Box: Igniting a SPARK in the Paradigm-Shifting Entrepreneurship",
+      "speaker": "Dr. Anthony Chang"
+    },
+    {
+      "type": "break",
+      "start": "12.15",
+      "end": "13.15",
+      "title": "Lunch Break"
+    },
+    {
+      "type": "section-header",
+      "title": "AI vs. MD DEBATE SESSION"
+    },
+    {
+      "type": "debate",
+      "start": "13.15",
+      "end": "14.15",
+      "title": "An Istanbul Reality: Managing A Disaster",
+      "speaker": "Prof. Dr. Mettem Gürsu"
+    },
+    {
+      "type": "presentation",
+      "start": "14.15",
+      "end": "15.00",
+      "title": "Oral Presentations: Part II"
+    },
+    {
+      "type": "break",
+      "start": "15.00",
+      "end": "15.15",
+      "title": "Coffee Break"
+    },
+    {
+      "type": "section-header",
+      "title": "THE INTERSECTION WHERE SOUL AND HEALTH CONVERGE: MEDICINE",
+      "moderator": "Prof. Dr. Pinar Soysal"
+    },
+    {
+      "type": "talk",
+      "start": "15.15",
+      "end": "16.00",
+      "title": "How Far Can You Bend Without Breaking?: The Art of Mental Strength and Resilience in Medicine",
+      "speaker": "Prof. Dr. Lee Smith"
+    },
+    {
+      "type": "talk",
+      "start": "16.00",
+      "end": "16.45",
+      "title": "Doctors (Also) Make Mistakes: Can We Discuss the Myth of Perfection and the Human Factor in Medicine?",
+      "speaker": "Assoc. Prof. Dr. Enver Özkurt"
+    },
+    {
+      "type": "awards",
+      "start": "16.45",
+      "end": "17.15",
+      "title": "Closing and Awards Ceremony"
+    }
+  ]
+}

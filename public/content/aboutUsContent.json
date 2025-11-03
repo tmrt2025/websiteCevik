@@ -1,0 +1,38 @@
+{
+  "pageTitle": "About Us",
+  "scientificBoard": {
+    "chairTitle": "SCIENTIFIC BOARD CHAIR",
+    "chairName": "Prof. Rümeyza Kazancıoğlu, MD",
+    "chairInfo": "Bezmiâlem Vakıf University, Department of Internal Medicine, Division of Nephrology",
+    "members": [
+      {
+        "name": "Prof. Pınar Soysal, MD",
+        "info": "Bezmiâlem Vakıf University, Department of Geriatrics"
+      },
+      {
+        "name": "Prof. Mehmet Hakan Özdemir, MD",
+        "info": "Bezmiâlem Vakıf University, Department of Ophthalmology"
+      },
+      {
+        "name": "Prof. Öner Şanlı, MD",
+        "info": "Istanbul University, Department of Urology"
+      },
+      {
+        "name": "Serdar Uysal, PhD",
+        "info": "LIVZYM BioTechnologies, Founder - Chairman"
+      },
+      {
+        "name": "Prof. Nicola Veronese, MD",
+        "info": "UniCamillus - International Medical University in Rome, Department of Geriatrics"
+      }
+    ]
+  },
+  "purpose": {
+    "title": "PURPOSE OF THE CONGRESS",
+    "content": "The congress, held under the name \"Sharing Perspectives and Research Knowledge\" (SPARK), will be organized for the eighth time this year under the auspices of Bezmialem Vakıf University. Its goal is to bring together the future physicians with international leaders and academics. In 2025, for the first time, the congress will host participants and speakers from around the world with the main theme of \"Awarenes\". The congress will include a scientific program, workshops, social events, and a post-event proceedings booklet."
+  },
+  "scope": {
+    "title": "SCOPE OF THE CONGRESS",
+    "content": "The congress team, which embarked on its mission to understand and convey what it means to be a good physician, realized that creating the SPARK brand name was about understanding different perspectives and acquiring the research mindset that forms the foundation of medical sciences. When determining the main theme of the first congress under this name, the team aimed to convey the SPARK vision and address current global topics in the field of medicine from diverse perspectives. The congress, with the theme of \"Awareness,\" intends to bring together medical students who are aware of themselves, their patients, and the changing world, under sub-themes such as \"The Future of Medicine,\" \"AI Technologies in Healthcare,\" \"Scientific Research,\" \"Medical Ethics,\" and\"Multidisciplinary Approach to Medicine.\" It is planned that participants will leave the congress with key takeaways, including the tools of a physician who meets the needs of the age, the leadership spirit that shapes the future, motivation for scientific research, and a strong awareness of ethical values."
+  }
+}

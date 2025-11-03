@@ -1,0 +1,44 @@
+.w-100{
+    width: 100% !important;
+}
+.d-block{
+    display: block !important;
+}
+img{
+    margin-top: 60px;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}.counter-wrap{
+    margin-top: 60px;
+    width: auto;
+    height: 80px;
+    background-color: #03043a;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.counter{
+    
+    display: flex;
+    font-size: inline-block;
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 1px;
+    padding: 0 0px;
+    color: #fff;
+    text-shadow: none;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}.counter div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}

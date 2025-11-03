@@ -1,0 +1,255 @@
+.organization-committee {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Committee Sections */
+.committee-section {
+  margin-bottom: 60px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #3498db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.committee-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Head Section - Special Styling */
+.head-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  border-left: 6px solid #e74c3c;
+}
+
+.head-section .section-title {
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+}
+
+/* Sub Titles */
+.sub-title {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #34495e;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Committee with Coordinators Layout */
+.committee-with-coordinators {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.simple-committee {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Members Grid */
+.members-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.management-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.financial-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.large-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+/* Member Cards */
+.member-card {
+  padding: 20px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Special Card Types */
+.member-card.prominent {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.member-card.management {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-card.coordinator {
+  background: linear-gradient(135deg, #fd746c 0%, #ff9068 100%);
+}
+
+.member-card.financial {
+  background: linear-gradient(135deg, #a8e6cf 0%, #3bb78f 100%);
+  color: #2c3e50;
+}
+
+/* Member Name */
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.member-card.prominent .member-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Member Role */
+.member-role {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Loading and Error States */
+.loading, .error {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 50px;
+  font-weight: 600;
+}
+
+.loading {
+  color: #3498db;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .organization-committee {
+    padding: 20px 15px;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .committee-section {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .committee-with-coordinators,
+  .simple-committee {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .management-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .member-card {
+    padding: 15px;
+  }
+  
+  .member-card.prominent {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .sub-title {
+    font-size: 1.2rem;
+  }
+  
+  .member-name {
+    font-size: 1rem;
+  }
+  
+  .member-card.prominent .member-name {
+    font-size: 1.3rem;
+  }
+}

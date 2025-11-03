@@ -1,0 +1,109 @@
+{
+  "pageTitle": "Scientific Program",
+  "date": "2025-05-23",
+  "location": "Istanbul, Turkey",
+  "schedule": [
+    {
+      "start": "08:00",
+      "end": "09:00",
+      "title": "Registration",
+      "type": "registration"
+    },
+    {
+      "start": "09:00",
+      "end": "09:15",
+      "title": "Opening Ceremony",
+      "type": "ceremony"
+    },
+    {
+      "start": "09:15",
+      "end": "09:50",
+      "title": "The Gift Of Being A Doctor",
+      "speaker": "Asst. Prof. Dr. Bernard 'Beau' Landry-Wegener",
+      "moderator": "Prof. Dr. Rümeyza Kazancıoğlu",
+      "type": "speech"
+    },
+    {
+      "start": "09:50",
+      "end": "10:15",
+      "title": "Coffee Break",
+      "type": "break"
+    },
+    {
+      "start": "10:15",
+      "end": "11:00",
+      "title": "AI-Powered Precision Medicine: Bridging Neuroscience and Intelligent Decision Systems",
+      "speaker": "Asst. Prof. Dr. Dilek Göksel Duru",
+      "moderator": "Prof. Dr. Mehmet Ziya Doymaz",
+      "type": "talk"
+    },
+    {
+      "start": "11:00",
+      "end": "11:45",
+      "title": "Beyond the Genome: Unravelling Diverse Disease Mechanisms with Multi-Omics Data",
+      "speaker": "Dr. Mine Köprülü",
+      "moderator": "Prof. Dr. Mehmet Ziya Doymaz",
+      "type": "talk"
+    },
+    {
+      "start": "11:45",
+      "end": "12:00",
+      "title": "Coffee Break",
+      "type": "break"
+    },
+    {
+      "start": "12:00",
+      "end": "12:45",
+      "title": "Life Without Gravity: New Frontiers in Human Biology",
+      "speaker": "Asst. Prof. Dr. Cihan Tastan",
+      "type": "talk"
+    },
+    {
+      "start": "12:45",
+      "end": "14:00",
+      "title": "Lunch Break",
+      "type": "break"
+    },
+    {
+      "start": "14:00",
+      "end": "15:00",
+      "title": "The Stories About Wind, Waves, Mountains and Snow",
+      "speaker": "Müge Naoko Gönül",
+      "type": "inspiration"
+    },
+    {
+      "start": "15:00",
+      "end": "15:45",
+      "title": "Oral Presentations: Part I",
+      "type": "presentation"
+    },
+    {
+      "start": "15:45",
+      "end": "16:00",
+      "title": "Coffee Break",
+      "type": "break"
+    },
+    {
+      "start": "16:00",
+      "end": "16:45",
+      "title": "CTRL+SCALPEL: Click, Cut, Heal - Will Surgery Ever Feel the Same?",
+      "speaker": "Prof. Dr. Ko Beom-Seok",
+      "moderator": "Assoc. Prof. Dr. Enver Özkurt",
+      "type": "talk"
+    },
+    {
+      "start": "16:45",
+      "end": "17:30",
+      "title": "Physician's New Assistant: Artificial Intelligence - What is the Future Mission of AI in Healthcare?",
+      "speaker": "Assoc. Prof. Dr. Furkan Kırık",
+      "moderator": "Assoc. Prof. Dr. Enver Özkurt",
+      "type": "talk"
+    },
+    {
+      "start": "17:30",
+      "end": "19:30",
+      "title": "Workshops",
+      "type": "workshop"
+    }
+  ]
+}
