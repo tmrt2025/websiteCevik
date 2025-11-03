@@ -1,0 +1,143 @@
+{
+  "pageTitle": "ABSTRACT SUBMISSION & JURY EVALUATION",
+  "sections": [
+    {
+      "type": "info",
+      "content": "Medical students and recent graduates who conduct scientific research and wish to present their work at the congress can apply. Abstracts will undergo a preliminary evaluation by the jury based on blind review criteria. Presentations of the abstracts that pass the preliminary evaluation will be conducted in two categories: oral and poster presentations. Both categories will be evaluated by the jury, and awards will be given for first, second, and third place."
+    },
+    {
+      "type": "info",
+      "content": "Students who qualify to present their scientific studies in the oral presentation sessions, based on the dates and criteria set by the congress jury, will be included in the program."
+    },
+    {
+      "type": "info",
+      "content": "Poster presentations will not be part of the scientific program flow but will be held in the congress foyer at designated times, to be determined later, during appropriate time slots within the scientific program hours, in the presence of participants and the jury."
+    },
+    {
+      "type": "info",
+      "content": "Summaries of speeches and presentations included in the scientific program will be published in the abstract book. The abstract book, which will be shared through announcement channels (printed and electronic media) after the event, will serve as a tangible output of the congress."
+    },
+    {
+      "type": "info",
+      "content": "At the congress, medical students and recent graduates presented their accepted oral and poster abstracts after a blind review. Oral presentations took place in the main program, while posters were displayed in the foyer. Awards were given to top presenters, and all accepted abstracts were published in the congress abstract book."
+    },
+    {
+      "type": "links",
+      "links": [
+        {
+          "text": "Click here for the abstract submission form.",
+          "url": "https://kongre.bezmialem.edu.tr/#submission",
+          "clk": "Click here"
+        }
+      ]
+    },
+    {
+      "type": "presentations",
+      "header": "Oral Presentations",
+      "sessions": [
+        {
+          "title": "Part I — May 23rd, Friday",
+          "presentations": [
+            {
+              "author": "Sara Gizem Melenp",
+              "title": "The Investigation of the Anti-Inflammatory and Immunomodulatory Effects of Isgin (Rheum Ribes L.) Extract on Macrophage",
+              "pdfUrl": "pdfs/abstSubm/oralPres1/Sara Gizem Melenp - sara gizem melenp abstract.pdf"
+            },
+            {
+              "author": "Recep Beşik",
+              "title": "The Relationship Between Adverse Childhood Experiences and Elder Abuse in Türkiye",
+              "pdfUrl": "pdfs/abstSubm/oralPres1/Recep Beşik-The relationship between adverse childhood experiences and elder abuse in turkiye.pdf"
+            },
+            {
+              "author": "Oğuz Alp Kucur",
+              "title": "Investigation of Biomarkers Associated with Intestinal Permeability in Patients with Migraine",
+              "pdfUrl":"pdfs/abstSubm/oralPres1/Oğuz Alp Kucur-Abstract Oğuz Alp KUCUR.pdf"
+            },
+            {
+              "author": "Naz Kalmam",
+              "title": "Evaluation of the Relationship Between CAD Risk Factors and Number of Grafts in CABG: A Retrospective Case-Control Study",
+              "pdfUrl":"pdfs/abstSubm/oralPres1/Naz Kalmam-Evaluation of the Relationship Between CAD Risk Factors and Number of Grafts in CABG_ A Retrospective Case-Control Study.pdf"
+            },
+            {
+              "author": "Hilal Hacıoğlu",
+              "title": "Self-Supervised Vision Transformers in Diabetic Retinopathy: OCT Analysis Without Labeled Data",
+              "pdfUrl":"pdfs/abstSubm/oralPres1/Hilal Hacioğlu-Hilal Hacioğlu.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Part II — May 24th, Saturday",
+          "presentations": [
+            {
+              "author": "İbrahim Eslem Demirbağ",
+              "title": "Salivary and Urinary Metabolomics Study in IgA Nephropathy Patients",
+              "pdfUrl": "/pdfs/abstSubm/oralPres2/ibrahim_eslem_demirbag.pdf"
+            },
+            {
+              "author": "Meryem Hamam",
+              "title": "Clustering and Subgroup Analysis of Acute Ischemic Stroke in 15094 Migraine Patients Using Machine Learning",
+              "pdfUrl": "/pdfs/abstSubm/oralPres2/meryem_hamam.pdf"
+            },
+            {
+              "author": "Göktuğ Mert Kurtoğlu",
+              "title": "Comparison of E Block and X Block Scaffold Systems for 3D Spheroid Formation and Apoptosis Regulation in HepG2 Cells",
+              "pdfUrl": "/pdfs/abstSubm/oralPres2/goktug_mert_kurtoglu.pdf"
+            },
+            {
+              "author": "Eren Tuna",
+              "title": "The Use of Artificial Intelligence, 3D PDF, and Deep Learning in Anatomy and Medicine: A Cross-Sectional Study",
+              "pdfUrl": "/pdfs/abstSubm/oralPres2/eren_tuna.pdf"
+            },
+            {
+              "author": "Beyzanur Güney",
+              "title": "Evaluation of Pediatric Pulmonary Tuberculosis Diagnosis with Deep Learning Models: X-Ray Image Analysis Using VGG16 and DenseNet121",
+              "pdfUrl": "/pdfs/abstSubm/oralPres2/beyzanur_guney.pdf"
+            },
+            {
+              "author": "Melike Cömert",
+              "title": "Adenox: A Machine Learning Model to Predict Molecular Targets in Non-Small Cell Lung Cancer",
+              "pdfUrl": "/pdfs/abstSubm/oralPres2   /melike_comert.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "presentations",
+      "header": "Poster Presentations",
+      "sessions": [
+        {
+          "title": "May 24th, Saturday",
+          "presentations": [
+            {
+              "author": "Furkan Özcan",
+              "title": "Heel Blood Screen Awareness; Diagnose and Prevent Phenylketonuria",
+              "pdfUrl": "pdfs/abstSubm/posterPres/Furkan Özcan.pdf"
+            },
+            {
+              "author": "Berre Nur Kara",
+              "title": "Utilizing Magnetic Nanoparticles in Cancer Theranostics: Focus on Glioblastoma Multiforme",
+              "pdfUrl": "pdfs/abstSubm/posterPres/Berra Nur Kara-Berra Nur KARA Abstract Bvuspark.pdf"
+            },
+            {
+              "author": "Feyza Geniş",
+              "title": "Sex Bias in Drug Development: The Consequences of Excluding Women from Clinical Trials",
+              "pdfUrl": "pdfs/abstSubm/posterPres/Feyza Geniş.pdf"
+            },
+            {
+              "author": "İncilay Çayan",
+              "title": "Applications of Artificial Intelligence as a Prognostic Tool in the Management of Acute Aortic Syndrome and Aneurysm: A Systematic Review",
+              "pdfUrl": "pdfs/abstSubm/posterPres/İncilay Çayan -Applications of artificial intelligence as a prognostic tool in the management of acute aortic syndrome and aneurysm a systematic review-.pdf"
+            },
+            {
+              "author": "Öykü Zeynep Avarbek",
+              "title": "Infections and Associated Mortality in VEXAS Syndrome: A Systematic Review and Meta-Analysis",
+              "pdfUrl": "pdfs/abstSubm/posterPres/Öykü Zeynep Avarbek.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
+}

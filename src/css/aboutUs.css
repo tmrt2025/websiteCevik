@@ -1,0 +1,216 @@
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Sayfa başlığı */
+.about-us h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Section stili */
+.about-us section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section başlıkları */
+.about-us section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Section içeriği */
+.about-us section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* Scientific Board Özel Stilleri */
+.scientific-board-section {
+    border-left-color: #e74c3c !important;
+}
+
+/* Chairman stili */
+.chairman-info {
+    margin-bottom: 35px;
+    padding: 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.chairman-info h2 {
+    color: white !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+    margin-bottom: 15px !important;
+}
+
+.chair-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #f8f9fa;
+}
+
+.chair-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.chair-info {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #e9ecef;
+}
+
+/* Board members grid */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Her bir board member kutusu */
+.member-card {
+    padding: 25px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Member adı */
+.member-card h4 {
+    margin: 0 0 12px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Member info */
+.member-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Purpose & Scope bölümleri */
+.purpose-section {
+    border-left-color: #27ae60 !important;
+    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+}
+
+.scope-section {
+    border-left-color: #f39c12 !important;
+    background: linear-gradient(135deg, #ffd3b6 0%, #ffaaa5 100%);
+}
+
+.purpose-section h2,
+.scope-section h2 {
+    color: #2c3e50;
+}
+
+/* Loading stili */
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3498db;
+    padding: 50px;
+    font-weight: 600;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 20px 15px;
+    }
+    
+    .about-us h1 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .about-us section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .about-us section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .member-card {
+        padding: 20px;
+    }
+    
+    .chairman-info {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-us section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us section p {
+        font-size: 1rem;
+    }
+    
+    .chair-name {
+        font-size: 1.5rem;
+    }
+    
+    .member-card h4 {
+        font-size: 1.2rem;
+    }
+}

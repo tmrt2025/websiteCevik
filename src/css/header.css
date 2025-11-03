@@ -1,67 +1,94 @@
-/* Üst header */
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #03043a;;
-  padding: 10px 16px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
-}
-
-.menu-btn {
-  background: none;
-  border: none;
-  font-size: 26px;
-  cursor: pointer;
-  margin-right: 16px;
-  color: #f0f0f0;
-}
-
-.title {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* Sidebar */
+/* Sidebar genel */
 .sidebar {
   position: fixed;
   top: 0;
   left: -260px;
-  width: 240px;
+  width: 250px;
   height: 100%;
-  background-color:white;;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  padding-top: 60px;
+  background: #222;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  padding-top: 60px;
   transition: left 0.3s ease;
-  z-index: 3;
+  z-index: 1000;
 }
 
 .sidebar.open {
   left: 0;
 }
 
-/* Menü linkleri */
 .sidebar-link {
+  padding: 14px 20px;
   text-decoration: none;
-  padding: 12px 20px;
-  color: #333;
-  font-weight: 500;
-  border-radius: 4px;
-  transition: background 0.2s;
+  color: #fff;
+  display: block;
+  transition: background 0.3s;
+  text-align: left;
 }
 
 .sidebar-link:hover {
-  background-color: #f0f0f0;
+  background: #444;
 }
 
-/* Arka plan karartma */
+.submenu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  padding: 14px 20px;
+  width: 100%;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  background: #333;
+  transition: max-height 0.3s ease;
+}
+
+.submenu.show {
+  max-height: 200px; /* Alt menü yüksekliği */
+}
+
+.sidebar-sublink {
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #ddd;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.sidebar-sublink:hover {
+  background: #555;
+}
+
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+}
+
+/* Arka plan overlay */
 .overlay {
   position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
 }

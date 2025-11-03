@@ -1,0 +1,220 @@
+{
+    "pageTitle": "Organization Committee",
+    "headOfScientificBoard": {
+        "name": "Prof. Rümeyza Kazancıoğlu"
+    },
+    "boardOfManagement": [
+        {
+            "role": "President",
+            "name": "Stu. Dr. Mahmut Çil"
+        },
+        {
+            "role": "Vice President",
+            "name": "Zeynep Kuzu"
+        },
+        {
+            "role": "Vice President",
+            "name": "Stu. Dr. İbrahim Genç"
+        },
+        {
+            "role": "Secretary General",
+            "name": "Stu. Dr. Enes Efendioğlu"
+        },
+        {
+            "role": "Financial Coordinator",
+            "name": "Stu. Dr. Mehmet Özbaş"
+        }
+    ],
+    "scientificCommittee": {
+        "coordinators": [
+            {
+                "name": "Stu. Dr. Berrak Pehlivan"
+            },
+            {
+                "name": "Ceren Ören"
+            }
+        ],
+        "members": [
+            {
+                "name": "Durrin İliman"
+            },
+            {
+                "name": "Elif Leyal Uğraş"
+            },
+            {
+                "name": "Kerem Polatöz"
+            },
+            {
+                "name": "Meltem Mina Dikmeci"
+            },
+            {
+                "name": "Veysel Yaşar Gerger"
+            }
+        ]
+    },
+    "hostingCommittee": {
+        "coordinators": [
+            {
+                "name": "Bahar Yangöz"
+            },
+            {
+                "name": "Ceylin Nisa İnandı"
+            }
+        ],
+        "members": [
+            {
+                "name": "Bahar Aynalı"
+            },
+            {
+                "name": "Berre Su Kömür"
+            },
+            {
+                "name": "Beyzanur Arslan"
+            },
+            {
+                "name": "Bilge Zeynep Kılıç"
+            },
+            {
+                "name": "Demirhan Ekşi"
+            },
+            {
+                "name": "Efe Berk Altunal"
+            },
+            {
+                "name": "Eren Can Doğan"
+            },
+            {
+                "name": "Hasan Kaan Gençtürk"
+            },
+            {
+                "name": "Hasan Salih Aktaş"
+            },
+            {
+                "name": "Ilgaz Aslan"
+            },
+            {
+                "name": "Işıl Banu Karagöz"
+            },
+            {
+                "name": "İrem Yüksel"
+            },
+            {
+                "name": "Mehmet Levent Gündoğdu"
+            },
+            {
+                "name": "Muhammed Enes Böce"
+            },
+            {
+                "name": "Münevver Sena Duva"
+            },
+            {
+                "name": "Sema Şeker"
+            },
+            {
+                "name": "Sevde Naz Sarısoy"
+            },
+            {
+                "name": "Şevval Deniz Bulut"
+            },
+            {
+                "name": "Zeynep Başbuğ"
+            },
+            {
+                "name": "Zeynep Hilal Özhan"
+            }
+        ]
+    },
+    "workshopCommittee": {
+        "coordinators": [
+            {
+                "name": "Nisan Haliloğlu"
+            },
+            {
+                "name": "Sude Çukacı"
+            }
+        ],
+        "members": [
+            {
+                "name": "Beyza Kumral"
+            },
+            {
+                "name": "Ceyda Duman"
+            },
+            {
+                "name": "Elis Özdikililer"
+            },
+            {
+                "name": "Nil Rümeysa Kosta"
+            },
+            {
+                "name": "Özge Baykara"
+            }
+        ]
+    },
+    "socialProgramCommittee": {
+        "coordinators": [
+            {
+                "name": "Stu. Dr. Ayşe Sena Esen"
+            },
+            {
+                "name": "Zeynep Parla Parmaksız"
+            }
+        ],
+        "members": [
+            {
+                "name": "Eylül Özgün"
+            },
+            {
+                "name": "Halim Deniz Koca"
+            },
+            {
+                "name": "Kağan Çakmak"
+            },
+            {
+                "name": "Larissa Basmacı"
+            },
+            {
+                "name": "Yaren Can"
+            }
+        ]
+    },
+    "socialMediaCommittee": {
+        "coordinator": "Duru Dönmez",
+        "members": [
+            {
+                "name": "Eda Nazlı Umar"
+            },
+            {
+                "name": "Nazım Kankılıç"
+            },
+            {
+                "name": "Sıla Çelebi"
+            },
+            {
+                "name": "Sude Özcan"
+            }
+        ]
+    },
+    "publicationsSupportCommittee": {
+        "coordinator": "Duru Dönmez",
+        "members": [
+            {
+                "name": "Nur Elif Akdoğan"
+            },
+            {
+                "name": "Sude Ayhan"
+            },
+            {
+                "name": "Vasfi Arslan"
+            }
+        ]
+    },
+    "financialCommittee": [
+        {
+            "name": "Murat Can Adam"
+        },
+        {
+            "name": "Mustafa Ceylan"
+        }
+    ]
+}

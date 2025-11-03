@@ -12,8 +12,11 @@ import ScientificProgram from './pages/scientificProgram'
 import Workshops from './pages/workshop'
 import SocialProgram from './pages/socialProgram'
 import PartnersAndSponsors from './pages/partnersAndSponsors'
-import PastCongesses from './pages/pastCongresses'
+
 import NotFoundPage from './pages/notFoundPage'
+import Registraion from './pages/registration'
+import AboutUs from './pages/AboutUs'
+import OrganizationCommittee from './pages/organizationCommittee'
 
 function App() {
   
@@ -24,13 +27,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/AboutCongress' element={<AboutCongress/>}/>
+          <Route path='AboutUs' element={<AboutUs/>}/>
+          <Route path='organizationCommit'  element={<OrganizationCommittee/>}/>
+        <Route/>
+        <Route path='/registration' element={<Registraion/>}/>
         <Route path='/abstractSubmJuryEva' element={<AbstractSubmJuryEva/>}/>
         <Route path='/accomodation' element={<Accomodation/>}/>
         <Route path='/scientificProgram' element={<ScientificProgram/>}/>
         <Route path='/workshops' element={<Workshops/>}/>
         <Route path='/socialProgram' element={<SocialProgram/>}/>
         <Route path='/partnersAndSponsors' element={<PartnersAndSponsors/>}/>
-        <Route path='/pastCongresses' element={<PastCongesses/>}/>
         <Route path='/*' element={<NotFoundPage/>}/>
 
       </Routes>
