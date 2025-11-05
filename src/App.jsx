@@ -16,7 +16,7 @@ import NotFoundPage from './pages/notFoundPage'
 import Registraion from './pages/registration'
 import AboutUs from './pages/AboutUs'
 import OrganizationCommittee from './pages/organizationCommittee'
-import AdminPanel from "./components/AdminPanel"
+import AdminPanel from "/src/components/AdminPanel"
 
 function App() {
   return (
