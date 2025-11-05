@@ -1,6 +1,5 @@
 import React from 'react'
 import "../css/registration.css"
-import { useFetchJson } from "../hooks/useFetchJson.JSX"
 import useLocalContent from "../hooks/useLocalContent"
 export default function Registration() {
   const { data, loading, error } = useLocalContent("registrationContent")
