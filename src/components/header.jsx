@@ -7,23 +7,23 @@ export default function Header() {
   const [openSubMenus, setOpenSubMenus] = useState({}); // 👈 Her alt menü için ayrı state
 
   const menuItems = [
-    { to: "/", label: "Homepage" },
-    { 
-      to: "/AboutCongress", 
-      label: "About Congress",
-      subItems: [
-        { to: "/AboutUs", label: "About Us" },
-        { to: "/organizationCommit", label: "Organization Commite" },
-      ]
-    },
-    { to: "/registration", label: "Registration" },
-    { to: "/abstractSubmJuryEva", label: "Abstract Submission Jury Evaluation" },
-    { to: "/accomodation", label: "Accomodation" },
-    { to: "/scientificProgram", label: "Scientific Program" },
-    { to: "/workshops", label: "Workshops" },
-    { to: "/socialProgram", label: "Social Program" },
-    { to: "/partnersAndSponsors", label: "Partners & Sponsors" },
-  ];
+  { to: "/", label: "Homepage" },
+  { 
+    to: "/about-congress", 
+    label: "About Congress",
+    subItems: [
+      { to: "/about-us", label: "About Us" },
+      { to: "/organization-committee", label: "Organization Committee" },
+    ]
+  },
+  { to: "/registration", label: "Registration" },
+  { to: "/abstract-submission", label: "Abstract Submission Jury Evaluation" },
+  { to: "/accommodation", label: "Accommodation" },
+  { to: "/scientific-program", label: "Scientific Program" },
+  { to: "/workshops", label: "Workshops" },
+  { to: "/social-program", label: "Social Program" },
+  { to: "/partners-sponsors", label: "Partners & Sponsors" },
+];
 
   // Alt menüyü açıp kapatan fonksiyon
   const toggleSubMenu = (index) => {
