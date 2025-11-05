@@ -10,7 +10,7 @@ import SocialProgram from './pages/socialProgram'
 import PartnersAndSponsors from './pages/partnersAndSponsors'
 import NotFoundPage from './pages/notFoundPage'
 import Registraion from './pages/registration'
-import AboutUs from './pages/AboutUs'
+import AboutUs from './pages/aboutUs'
 import OrganizationCommittee from './pages/organizationCommittee'
 import AdminPanel from "./components/AdminPanel"
 
