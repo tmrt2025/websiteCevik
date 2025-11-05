@@ -12,37 +12,31 @@ import ScientificProgram from './pages/scientificProgram'
 import Workshops from './pages/workshop'
 import SocialProgram from './pages/socialProgram'
 import PartnersAndSponsors from './pages/partnersAndSponsors'
-
 import NotFoundPage from './pages/notFoundPage'
 import Registraion from './pages/registration'
 import AboutUs from './pages/AboutUs'
 import OrganizationCommittee from './pages/organizationCommittee'
 import AdminPanel from "./components/AdminPanel"
-function App() {
-  
 
+function App() {
   return (
     <div>
       <Header/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
-        <Route path='/AboutCongress' element={<AboutCongress/>}/>
-          <Route path='AboutUs' element={<AboutUs/>}/>
-          <Route path='organizationCommit'  element={<OrganizationCommittee/>}/>
-        <Route/>
+        <Route path='/about-congress' element={<AboutCongress/>}/>
+        <Route path='/about-us' element={<AboutUs/>}/>
+        <Route path='/organization-committee' element={<OrganizationCommittee/>}/>
         <Route path='/registration' element={<Registraion/>}/>
-        <Route path='/abstractSubmJuryEva' element={<AbstractSubmJuryEva/>}/>
-        <Route path='/accomodation' element={<Accomodation/>}/>
-        <Route path='/scientificProgram' element={<ScientificProgram/>}/>
+        <Route path='/abstract-submission' element={<AbstractSubmJuryEva/>}/>
+        <Route path='/accommodation' element={<Accomodation/>}/>
+        <Route path='/scientific-program' element={<ScientificProgram/>}/>
         <Route path='/workshops' element={<Workshops/>}/>
-        <Route path='/socialProgram' element={<SocialProgram/>}/>
-        <Route path='/partnersAndSponsors' element={<PartnersAndSponsors/>}/>
-        <Route path='/*' element={<NotFoundPage/>}/>
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path='/social-program' element={<SocialProgram/>}/>
+        <Route path='/partners-sponsors' element={<PartnersAndSponsors/>}/>
+        <Route path='/admin' element={<AdminPanel />} />
+        <Route path='*' element={<NotFoundPage/>}/>
       </Routes>
-    
-
-
     </div>
   )
 }
