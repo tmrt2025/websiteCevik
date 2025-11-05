@@ -1,5 +1,4 @@
 import React from 'react'
-import { useFetchJson } from "../hooks/useFetchJson.JSX"
 import "../css/scientficProg.css"
 import useLocalContent from "../hooks/useLocalContent"
 export default function ScientificProgram() {
