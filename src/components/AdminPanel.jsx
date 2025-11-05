@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import "../css/smartAdminPanel.css"
+import "src/css/smartAdminPanel.css"
 
 const SecureAdminPanel = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -14,7 +14,7 @@ const SecureAdminPanel = () => {
   const [isLocked, setIsLocked] = useState(false);
   const [lockUntil, setLockUntil] = useState(null);
   const [lastActivity, setLastActivity] = useState(Date.now());
-  
+
   // 🔐 Environment variables
   const ADMIN_USERNAME = import.meta.env.VITE_ADMIN_USERNAME;
   const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
@@ -22,7 +22,7 @@ const SecureAdminPanel = () => {
   const MAX_LOGIN_ATTEMPTS = 5;
   const LOCK_TIME_MINUTES = 30;
   const SESSION_TIMEOUT_MINUTES = 60;
-  
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -33,7 +33,7 @@ const SecureAdminPanel = () => {
     'absSubm',
     'accomodation',
     'schedule',
-    'schedule2', 
+    'schedule2',
     'workshopContent',
     'socialProgram',
     'sponsors'
@@ -46,7 +46,7 @@ const SecureAdminPanel = () => {
         const now = Date.now();
         const inactiveTime = now - lastActivity;
         const timeoutMs = SESSION_TIMEOUT_MINUTES * 60 * 1000;
-        
+
         if (inactiveTime > timeoutMs) {
           handleAutoLogout('Session expired due to inactivity');
         }
@@ -88,7 +88,7 @@ const SecureAdminPanel = () => {
   useEffect(() => {
     const savedAuth = localStorage.getItem('adminAuth');
     const sessionExpiry = localStorage.getItem('adminSessionExpiry');
-    
+
     if (savedAuth === 'true' && sessionExpiry && Date.now() < parseInt(sessionExpiry)) {
       setIsAuthenticated(true);
       loadAllFiles();
@@ -102,11 +102,11 @@ const SecureAdminPanel = () => {
   const loadAllFiles = async () => {
     console.log('🔄 Starting to load all files...');
     const loadedFiles = {};
-    
+
     for (const file of jsonFiles) {
       try {
         console.log(`📂 Loading file: ${file}`);
-        
+
         const saved = localStorage.getItem(`cms_${file}`);
         if (saved) {
           console.log(`✅ Loaded from localStorage: ${file}`);
@@ -126,7 +126,7 @@ const SecureAdminPanel = () => {
         console.error(`💥 Error loading ${file}:`, error);
       }
     }
-    
+
     console.log('🎉 All files loaded:', loadedFiles);
     setFiles(loadedFiles);
   };
@@ -154,18 +154,18 @@ const SecureAdminPanel = () => {
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
       setIsAuthenticated(true);
       setLoginAttempts(0);
-      
+
       const sessionExpiry = Date.now() + (SESSION_TIMEOUT_MINUTES * 60 * 1000);
       localStorage.setItem('adminAuth', 'true');
       localStorage.setItem('adminSessionExpiry', sessionExpiry.toString());
-      
+
       loadAllFiles();
       alert('✅ Login successful!');
     } else {
       const newAttempts = loginAttempts + 1;
       setLoginAttempts(newAttempts);
       const remainingAttempts = MAX_LOGIN_ATTEMPTS - newAttempts;
-      
+
       if (remainingAttempts > 0) {
         alert(`❌ Invalid credentials. ${remainingAttempts} attempts remaining.`);
       } else {
@@ -174,7 +174,7 @@ const SecureAdminPanel = () => {
         setIsLocked(true);
         alert(`🚫 Account locked for ${LOCK_TIME_MINUTES} minutes.`);
       }
-      
+
       setPassword('');
     }
   };
@@ -195,19 +195,19 @@ const SecureAdminPanel = () => {
   // 🎯 ÖZELLEŞTİRİLMİŞ TEXT ALANLARI ÇIKARMA
   const extractTextFields = (obj, prefix = '', fileName = '') => {
     const fields = [];
-    
+
     console.log('🔍 extractTextFields called for:', fileName);
 
     const processValue = (value, key, currentPrefix, depth = 0) => {
       const fullPath = currentPrefix ? `${currentPrefix}.${key}` : key;
-      
+
       // Özel dosya tipleri için optimize edilmiş field extraction
       if (fileName.includes('scientificProgram')) {
         // Scientific Program için özel logic
         if (typeof value === 'string' && value.length > 0) {
           // Schedule içindeki önemli alanlar
-          if (fullPath.includes('schedule') && 
-              (key === 'title' || key === 'speaker' || key === 'moderator')) {
+          if (fullPath.includes('schedule') &&
+            (key === 'title' || key === 'speaker' || key === 'moderator')) {
             fields.push({
               path: fullPath,
               label: `${key.charAt(0).toUpperCase() + key.slice(1)} (${fileName})`,
@@ -231,9 +231,9 @@ const SecureAdminPanel = () => {
       else if (fileName.includes('aboutUsContent')) {
         // About Us için özel logic
         if (typeof value === 'string' && value.length > 10) {
-          if (fullPath.includes('scientificBoard') || 
-              fullPath.includes('purpose') || 
-              fullPath.includes('scope')) {
+          if (fullPath.includes('scientificBoard') ||
+            fullPath.includes('purpose') ||
+            fullPath.includes('scope')) {
             fields.push({
               path: fullPath,
               label: `${key.charAt(0).toUpperCase() + key.slice(1)}`,
@@ -247,8 +247,8 @@ const SecureAdminPanel = () => {
       else if (fileName.includes('workshopsContent')) {
         // Workshops için özel logic
         if (typeof value === 'string' && value.length > 0) {
-          if (fullPath.includes('workshops') && 
-              (key === 'title' || key === 'description')) {
+          if (fullPath.includes('workshops') &&
+            (key === 'title' || key === 'description')) {
             fields.push({
               path: fullPath,
               label: `${key.charAt(0).toUpperCase() + key.slice(1)}`,
@@ -262,9 +262,9 @@ const SecureAdminPanel = () => {
       else if (fileName.includes('socialProgramContent')) {
         // Social Program için özel logic
         if (typeof value === 'string' && value.length > 0) {
-          if (fullPath.includes('intro') || 
-              (fullPath.includes('events') && 
-               (key === 'title' || key === 'date' || key === 'time' || key === 'location'))) {
+          if (fullPath.includes('intro') ||
+            (fullPath.includes('events') &&
+              (key === 'title' || key === 'date' || key === 'time' || key === 'location'))) {
             fields.push({
               path: fullPath,
               label: `${key.charAt(0).toUpperCase() + key.slice(1)}`,
@@ -292,9 +292,9 @@ const SecureAdminPanel = () => {
       else if (fileName.includes('accommodationContent')) {
         // Accommodation için özel logic
         if (typeof value === 'string' && value.length > 0) {
-          if (fullPath.includes('intro') || 
-              (fullPath.includes('accommodationOptions') && 
-               (key === 'name' || key === 'description'))) {
+          if (fullPath.includes('intro') ||
+            (fullPath.includes('accommodationOptions') &&
+              (key === 'name' || key === 'description'))) {
             fields.push({
               path: fullPath,
               label: `${key.charAt(0).toUpperCase() + key.slice(1)}`,
@@ -308,8 +308,8 @@ const SecureAdminPanel = () => {
       else if (fileName.includes('registrationContent')) {
         // Registration için özel logic
         if (typeof value === 'string' && value.length > 0) {
-          if (fullPath.includes('sections') && 
-              (key === 'content' || key === 'text')) {
+          if (fullPath.includes('sections') &&
+            (key === 'content' || key === 'text')) {
             fields.push({
               path: fullPath,
               label: 'Content',
@@ -383,7 +383,7 @@ const SecureAdminPanel = () => {
     for (const key in obj) {
       processValue(obj[key], key, prefix, 0);
     }
-    
+
     console.log(`🎯 Total fields extracted for ${fileName}:`, fields.length);
     return fields;
   };
@@ -393,7 +393,7 @@ const SecureAdminPanel = () => {
     setCurrentFile(filename);
     setSearchTerm('');
     const content = files[filename] || {};
-    
+
     console.log('📄 File content:', content);
     const fields = extractTextFields(content, '', filename);
     console.log('🎯 Extracted fields:', fields);
@@ -410,7 +410,7 @@ const SecureAdminPanel = () => {
   // ✏️ Alan değişikliği
   const handleFieldChange = (path, newValue) => {
     console.log('✏️ Field changed:', { path, newValue });
-    const updatedFields = smartFields.map(field => 
+    const updatedFields = smartFields.map(field =>
       field.path === path ? { ...field, value: newValue } : field
     );
     setSmartFields(updatedFields);
@@ -420,10 +420,10 @@ const SecureAdminPanel = () => {
   const updateNestedValue = (obj, path, value) => {
     const pathParts = path.split('.');
     let current = obj;
-    
+
     for (let i = 0; i < pathParts.length - 1; i++) {
       let part = pathParts[i];
-      
+
       if (part.includes('[')) {
         const arrayMatch = part.match(/(\w+)\[(\d+)\]/);
         if (arrayMatch && current[arrayMatch[1]]) {
@@ -436,7 +436,7 @@ const SecureAdminPanel = () => {
         current = current[part];
       }
     }
-    
+
     const lastPart = pathParts[pathParts.length - 1];
     if (lastPart.includes('[')) {
       const arrayMatch = lastPart.match(/(\w+)\[(\d+)\]/);
@@ -448,7 +448,7 @@ const SecureAdminPanel = () => {
       current[lastPart] = value;
       return true;
     }
-    
+
     return false;
   };
 
@@ -457,19 +457,19 @@ const SecureAdminPanel = () => {
     try {
       console.log('💾 Saving changes for:', currentFile);
       const updatedContent = JSON.parse(JSON.stringify(files[currentFile]));
-      
+
       smartFields.forEach(field => {
         if (!updateNestedValue(updatedContent, field.path, field.value)) {
           console.warn(`Could not update path: ${field.path}`);
         }
       });
-      
+
       const updatedFiles = { ...files, [currentFile]: updatedContent };
       setFiles(updatedFiles);
       localStorage.setItem(`cms_${currentFile}`, JSON.stringify(updatedContent));
-      
+
       alert('✅ Changes saved successfully! Refresh page to see updates.');
-      
+
     } catch (error) {
       alert(`❌ Error saving: ${error.message}`);
     }
@@ -485,10 +485,10 @@ const SecureAdminPanel = () => {
           const updatedFiles = { ...files, [currentFile]: originalData };
           setFiles(updatedFiles);
           localStorage.removeItem(`cms_${currentFile}`);
-          
+
           const fields = extractTextFields(originalData, '', currentFile);
           setSmartFields(fields);
-          
+
           alert('✅ Reset to original content!');
         }
       } catch (error) {
@@ -511,9 +511,9 @@ const SecureAdminPanel = () => {
   useEffect(() => {
     if (isAuthenticated) {
       const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart'];
-      
+
       const updateActivityHandler = () => updateActivity();
-      
+
       events.forEach(event => {
         document.addEventListener(event, updateActivityHandler);
       });
@@ -550,10 +550,10 @@ const SecureAdminPanel = () => {
             <p>Please try again in <strong>{remainingTime}</strong> minutes.</p>
             <div className="lock-timer">
               <div className="timer-bar">
-                <div 
-                  className="timer-progress" 
-                  style={{ 
-                    width: `${((lockUntil - Date.now()) / (LOCK_TIME_MINUTES * 60 * 1000)) * 100}%` 
+                <div
+                  className="timer-progress"
+                  style={{
+                    width: `${((lockUntil - Date.now()) / (LOCK_TIME_MINUTES * 60 * 1000)) * 100}%`
                   }}
                 ></div>
               </div>
@@ -566,7 +566,7 @@ const SecureAdminPanel = () => {
 
   if (!isAuthenticated && location.pathname === '/admin') {
     const remainingAttempts = MAX_LOGIN_ATTEMPTS - loginAttempts;
-    
+
     return (
       <div className="admin-login-page">
         <div className="login-container">
@@ -576,9 +576,9 @@ const SecureAdminPanel = () => {
               <span className="secure-indicator">🔒 Secure Connection</span>
             </div>
           </div>
-          
+
           <p className="login-info">Authentication Required</p>
-          
+
           {loginAttempts > 0 && (
             <div className="attempts-warning">
               <span>⚠️ {remainingAttempts} attempt{remainingAttempts !== 1 ? 's' : ''} remaining</span>
@@ -598,7 +598,7 @@ const SecureAdminPanel = () => {
                 disabled={isLocked}
               />
             </div>
-            
+
             <div className="input-group">
               <label>Password:</label>
               <input
@@ -611,9 +611,9 @@ const SecureAdminPanel = () => {
                 disabled={isLocked}
               />
             </div>
-            
-            <button 
-              type="submit" 
+
+            <button
+              type="submit"
               className="login-btn"
               disabled={isLocked}
             >
@@ -718,7 +718,7 @@ const SecureAdminPanel = () => {
                     </span>
                   )}
                 </div>
-                
+
                 <div className="toolbar-actions">
                   <button onClick={saveChanges} className="save-btn">
                     💾 Save All Changes
@@ -741,7 +741,7 @@ const SecureAdminPanel = () => {
                               {field.label}
                               <span className="field-path">({field.path})</span>
                             </label>
-                            
+
                             {field.type === 'textarea' ? (
                               <textarea
                                 value={field.value}
@@ -759,7 +759,7 @@ const SecureAdminPanel = () => {
                                 placeholder={`Enter ${field.label.toLowerCase()}...`}
                               />
                             )}
-                            
+
                             <div className="field-meta">
                               <span className="field-type">{field.type}</span>
                               <span className="field-length">{field.value.length} chars</span>

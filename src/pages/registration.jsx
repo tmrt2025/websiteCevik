@@ -3,7 +3,7 @@ import "../css/registration.css"
 import useLocalContent from "../hooks/useLocalContent"
 export default function Registration() {
   const { data, loading, error } = useLocalContent("registrationContent")
-  
+
   if (loading) return (
     <div className="registration-page">
       <div className="loading-state">
@@ -12,7 +12,7 @@ export default function Registration() {
       </div>
     </div>
   );
-  
+
   if (error) return (
     <div className="registration-page">
       <div className="error-state">
@@ -21,7 +21,7 @@ export default function Registration() {
       </div>
     </div>
   );
-  
+
   if (!data) return (
     <div className="registration-page">
       <div className="error-state">
@@ -49,11 +49,11 @@ export default function Registration() {
             {section.type === "links" && section.links && (
               <div className="links-container">
                 {section.links.map((link, j) => (
-                  <a 
-                    href={link.url} 
+                  <a
+                    href={link.url}
                     className="link-item"
                     key={j}
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="link-text">{link.text}</span>

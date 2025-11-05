@@ -3,7 +3,7 @@ import "../css/socialProgram.css";
 import useLocalContent from "../hooks/useLocalContent"
 export default function SocialProgram() {
   const { data, loading, error } = useLocalContent("socialProgram")
-  
+
   if (loading) return (
     <div className="social-program-page">
       <div className="loading-state">
@@ -12,7 +12,7 @@ export default function SocialProgram() {
       </div>
     </div>
   );
-  
+
   if (error) return (
     <div className="social-program-page">
       <div className="error-state">
@@ -21,7 +21,7 @@ export default function SocialProgram() {
       </div>
     </div>
   );
-  
+
   if (!data) return (
     <div className="social-program-page">
       <div className="error-state">
@@ -56,8 +56,8 @@ export default function SocialProgram() {
               {data.events.map((event, index) => (
                 <div className="event-card" key={index}>
                   <div className="event-image">
-                    <img 
-                      src={event.image} 
+                    <img
+                      src={event.image}
                       alt={event.title}
                       onError={(e) => {
                         e.target.src = '/images/placeholder-event.jpg';

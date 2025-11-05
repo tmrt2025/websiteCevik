@@ -19,7 +19,7 @@ export default function ScientificProgram() {
           <h1 className="day-title">May 23rd, Friday</h1>
           <div className="day-subtitle">First Day - Innovation & Technology</div>
         </div>
-        
+
         <div className="schedule-container">
           {data1.schedule.map((item, index) => (
             <ScheduleItem key={index} item={item} />
@@ -33,7 +33,7 @@ export default function ScientificProgram() {
           <h1 className="day-title">May 24th, Saturday</h1>
           <div className="day-subtitle">Second Day - Research & Future Perspectives</div>
         </div>
-        
+
         <div className="schedule-container">
           {data2.schedule.map((item, index) => (
             <ScheduleItem key={index} item={item} />
@@ -69,13 +69,13 @@ function ScheduleItem({ item }) {
           <span className="item-icon">{getIcon(item.type)}</span>
           <h3 className="item-title">{item.title}</h3>
         </div>
-        
+
         {item.speaker && (
           <div className="item-speaker">
             <strong>{item.speaker}</strong>
           </div>
         )}
-        
+
         {item.moderator && (
           <div className="item-moderator">
             <strong>Moderator:</strong> {item.moderator}
