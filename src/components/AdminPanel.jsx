@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import "../css/smartAdminPanel.css"
+import "../css/adminPanel.css"
 
 const SecureAdminPanel = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
