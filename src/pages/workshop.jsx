@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useFetchJson } from "../hooks/usefetchJson"
 import "../css/workshop.css"
-
+import useLocalContent from "../hooks/useLocalContent"
 export default function Workshop() {
-  const { data, loading, error } = useFetchJson("/content/workshopContent.json")
+  const { data, loading, error } = useLocalContent("workshopContent")
   const [selected, setSelected] = useState(null)
 
   if (loading) return (

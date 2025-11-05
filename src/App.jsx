@@ -17,7 +17,7 @@ import NotFoundPage from './pages/notFoundPage'
 import Registraion from './pages/registration'
 import AboutUs from './pages/AboutUs'
 import OrganizationCommittee from './pages/organizationCommittee'
-
+import AdminPanel from "./components/AdminPanel"
 function App() {
   
 
@@ -38,7 +38,7 @@ function App() {
         <Route path='/socialProgram' element={<SocialProgram/>}/>
         <Route path='/partnersAndSponsors' element={<PartnersAndSponsors/>}/>
         <Route path='/*' element={<NotFoundPage/>}/>
-
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
     
 

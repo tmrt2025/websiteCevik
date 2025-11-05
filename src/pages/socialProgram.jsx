@@ -1,9 +1,9 @@
 import React from 'react';
 import { useFetchJson } from "../hooks/useFetchJson.JSX";
 import "../css/socialProgram.css";
-
+import useLocalContent from "../hooks/useLocalContent"
 export default function SocialProgram() {
-  const { data, loading, error } = useFetchJson("/content/socialProgram.json");
+  const { data, loading, error } = useLocalContent("socialProgram")
   
   if (loading) return (
     <div className="social-program-page">

@@ -1,11 +1,11 @@
 import React from 'react'
 import { useFetchJson } from "../hooks/useFetchJson.JSX"
 import "../css/scientficProg.css"
-
+import useLocalContent from "../hooks/useLocalContent"
 export default function ScientificProgram() {
   // İki programı aynı anda çek
-  const { data: data1, loading: loading1, error: error1 } = useFetchJson("/content/schedule.json")
-  const { data: data2, loading: loading2, error: error2 } = useFetchJson("/content/schedule2.json")
+  const { data: data1, loading: loading1, error: error1 } = useLocalContent("schedule")
+  const { data: data2, loading: loading2, error: error2 } = useLocalContent("schedule2")
 
   if (loading1 || loading2) return <div className="loading">Loading program info...</div>;
   if (error1) return <div className="error">Error loading May 23 program: {error1.message}</div>;

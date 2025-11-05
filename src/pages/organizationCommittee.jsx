@@ -3,8 +3,9 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 import { useFetchJson } from '../hooks/usefetchJson';
 import "../css/organizationCommittee.css";
+import useLocalContent from "../hooks/useLocalContent"
 function organizationCommittee() {
-  const {data,loading,error}=useFetchJson("/content/organizationCommittee.json")
+  const {data,loading,error}=useLocalContent("organizationContent")
 
   if (loading) return (
     <div className="registration-page">

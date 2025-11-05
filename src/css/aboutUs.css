@@ -1,216 +1,448 @@
+/* ===== ABOUT US PAGE STYLES ===== */
 .about-us {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.7;
-    color: #333;
-    background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
 }
 
 /* Sayfa başlığı */
 .about-us h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 50px;
-    color: #2c3e50;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  position: relative;
 }
 
-/* Section stili */
+.about-us h1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 2px;
+}
+
+/* Section genel stilleri */
 .about-us section {
-    margin-bottom: 50px;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #3498db;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 60px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  transition: width 0.3s ease;
 }
 
 .about-us section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-us section:hover::before {
+  width: 8px;
 }
 
 /* Section başlıkları */
 .about-us section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 25px;
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 15px;
-    font-weight: 600;
-}
-
-/* Section içeriği */
-.about-us section p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    color: #555;
-    text-align: justify;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+  position: relative;
 }
 
 /* Scientific Board Özel Stilleri */
 .scientific-board-section {
-    border-left-color: #e74c3c !important;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+  border-left: 6px solid #e74c3c !important;
 }
 
-/* Chairman stili */
+.scientific-board-section::before {
+  background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+}
+
 .chairman-info {
-    margin-bottom: 35px;
-    padding: 25px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border-radius: 8px;
-    text-align: center;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
 
 .chairman-info h2 {
-    color: white !important;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
-    margin-bottom: 15px !important;
-}
-
-.chair-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #f8f9fa;
+  color: white !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+  margin-bottom: 15px !important;
+  font-size: 1.8rem !important;
 }
 
 .chair-name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .chair-info {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: #e9ecef;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #e9ecef;
+  opacity: 0.9;
 }
 
 /* Board members grid */
 .members-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
-/* Her bir board member kutusu */
 .member-card {
-    padding: 25px;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.member-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
 }
 
 .member-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  border-color: #27ae60;
 }
 
-/* Member adı */
 .member-card h4 {
-    margin: 0 0 12px;
-    font-size: 1.4rem;
-    color: #ffffff;
-    font-weight: 600;
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 600;
 }
 
-/* Member info */
 .member-card p {
-    margin: 0;
-    font-size: 1rem;
-    color: #f8f9fa;
-    line-height: 1.6;
+  margin: 0;
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Purpose & Scope bölümleri */
 .purpose-section {
-    border-left-color: #27ae60 !important;
-    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+  background: linear-gradient(135deg, #e8f4fd 0%, #d1ecf1 100%) !important;
+  border-left: 6px solid #3498db !important;
+}
+
+.purpose-section::before {
+  background: linear-gradient(135deg, #3498db, #2980b9) !important;
 }
 
 .scope-section {
-    border-left-color: #f39c12 !important;
-    background: linear-gradient(135deg, #ffd3b6 0%, #ffaaa5 100%);
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%) !important;
+  border-left: 6px solid #f39c12 !important;
+}
+
+.scope-section::before {
+  background: linear-gradient(135deg, #f39c12, #e67e22) !important;
 }
 
 .purpose-section h2,
 .scope-section h2 {
-    color: #2c3e50;
+  color: #2c3e50;
+  font-size: 1.8rem;
 }
 
-/* Loading stili */
+.purpose-section p,
+.scope-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/* Loading ve Error States */
 .loading {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #3498db;
-    padding: 50px;
-    font-weight: 600;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3498db;
+  padding: 60px 20px;
+  font-weight: 600;
 }
 
-/* Responsive ayarlar */
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  padding: 40px 20px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* Optional: Safe area operator fallback */
+.about-us section h2:not(:defined) {
+  color: #2c3e50;
+}
+
+.about-us section p:not(:defined) {
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-us {
+    padding: 30px 15px;
+  }
+  
+  .about-us h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-us section {
+    padding: 30px;
+  }
+  
+  .members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
-    .about-us {
-        padding: 20px 15px;
-    }
-    
-    .about-us h1 {
-        font-size: 2.2rem;
-        margin-bottom: 30px;
-    }
-    
-    .about-us section {
-        padding: 20px;
-        margin-bottom: 30px;
-    }
-    
-    .about-us section h2 {
-        font-size: 1.8rem;
-    }
-    
-    .members-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .member-card {
-        padding: 20px;
-    }
-    
-    .chairman-info {
-        padding: 20px;
-    }
+  .about-us {
+    padding: 20px 10px;
+  }
+  
+  .about-us h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .about-us h1::after {
+    width: 80px;
+  }
+  
+  .about-us section {
+    padding: 25px 20px;
+    margin-bottom: 40px;
+  }
+  
+  .about-us section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .chairman-info {
+    padding: 20px;
+  }
+  
+  .chair-name {
+    font-size: 1.6rem;
+  }
+  
+  .chair-info {
+    font-size: 1.1rem;
+  }
+  
+  .members-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .member-card {
+    padding: 20px;
+  }
+  
+  .purpose-section p,
+  .scope-section p {
+    font-size: 1rem;
+    text-align: left;
+  }
 }
 
 @media (max-width: 480px) {
-    .about-us h1 {
-        font-size: 1.8rem;
-    }
-    
-    .about-us section h2 {
-        font-size: 1.5rem;
-    }
-    
-    .about-us section p {
-        font-size: 1rem;
-    }
-    
-    .chair-name {
-        font-size: 1.5rem;
-    }
-    
-    .member-card h4 {
-        font-size: 1.2rem;
-    }
+  .about-us h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-us section {
+    padding: 20px 15px;
+  }
+  
+  .about-us section h2 {
+    font-size: 1.4rem;
+  }
+  
+  .chair-name {
+    font-size: 1.4rem;
+  }
+  
+  .member-card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    padding: 40px 20px;
+  }
+  
+  .error {
+    font-size: 1rem;
+    padding: 30px 15px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-us section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.about-us section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.about-us section:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.about-us section:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Hover efektleri için transition */
+.member-card,
+.about-us section,
+.chairman-info {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.member-card:focus-within {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .about-us {
+    padding: 0;
+    background: white;
+  }
+  
+  .about-us section {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+  
+  .chairman-info {
+    background: #f8f9fa !important;
+    color: #000 !important;
+  }
+  
+  .member-card {
+    border: 1px solid #ccc;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .about-us section {
+    border: 2px solid #000;
+  }
+  
+  .member-card {
+    border: 2px solid #000;
+  }
+  
+  .chairman-info {
+    background: #000 !important;
+    color: #fff !important;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .about-us section,
+  .member-card,
+  .chairman-info {
+    transition: none;
+    animation: none;
+  }
+  
+  .about-us section:hover {
+    transform: none;
+  }
+}
+
+/* Scrollbar Styling (optional) */
+.about-us::-webkit-scrollbar {
+  width: 8px;
+}
+
+.about-us::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.about-us::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 4px;
+}
+
+.about-us::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2980b9, #1f618d);
 }

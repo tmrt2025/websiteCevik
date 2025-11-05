@@ -1,9 +1,9 @@
 import React from 'react'
 import {useFetchJson} from "../hooks/usefetchJson"
 import "../css/abstSubm.css"
-
+import useLocalContent from "../hooks/useLocalContent"
 export default function AbstractSubmissionJuryEva() {
-  const {data,loading,error}=useFetchJson("/content/absSubm.json")
+  const {data,loading,error}=useLocalContent("absSubm")
     if (loading) return <p>Loading registration info...</p>;
     if (error) return <p>Error loading data: {error.message}</p>;
     if (!data) return <p>No data found.</p>;

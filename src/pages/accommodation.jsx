@@ -1,9 +1,9 @@
 import React from 'react'
 import {useFetchJson} from "../hooks/usefetchJson"
 import "../css/accomodation.css"
-
+import useLocalContent from "../hooks/useLocalContent"
 export default function accommodation() {
-  const {data,loading,error}=useFetchJson("/content/accomodation.json")
+  const {data,loading,error}=useLocalContent("accomodation")
   if(loading) return(
     <div className="accomoadion-page">
       <div className="loading-state">

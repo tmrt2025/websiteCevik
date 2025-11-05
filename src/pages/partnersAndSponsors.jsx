@@ -1,9 +1,9 @@
 import React from 'react'
 import { useFetchJson } from "../hooks/usefetchJson"
 import "../css/sponsors.css"
-
+import useLocalContent from "../hooks/useLocalContent"
 export default function PartnersAndSponsors() {
-  const {data,loading,error}=useFetchJson("/content/sponsors.json")
+  const {data,loading,error}=useLocalContent("sponsors")
   console.log(data)
   
   if (loading) return (

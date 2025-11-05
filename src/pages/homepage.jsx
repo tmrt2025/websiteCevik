@@ -1,9 +1,10 @@
 import React from 'react'
 import "../css/homepage.css"
+
 export default function homepage() {
   return (
     <>
-      <img src="src/assets/images/2025banner.png" className="d-block w-100"alt="..." />
+      <img src="/images/2025banner.png"  className="d-block w-100"alt="..." />
       <div className="counter-wrap">
         <div className="counter">
           <div className="day" >
