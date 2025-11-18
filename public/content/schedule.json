@@ -4,18 +4,6 @@
   "location": "Istanbul, Turkey",
   "schedule": [
     {
-      "start": "08:00",
-      "end": "09:00",
-      "title": "Registration",
-      "type": "registration"
-    },
-    {
-      "start": "09:00",
-      "end": "09:15",
-      "title": "Opening Ceremony",
-      "type": "ceremony"
-    },
-    {
       "start": "09:15",
       "end": "09:50",
       "title": "The Gift Of Being A Doctor",
